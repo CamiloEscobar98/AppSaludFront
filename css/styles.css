@@ -1,9 +1,37 @@
-.content-body{
-    height: calc(100vh);
+.content-body {
+    /* height: calc(100vh); */
 }
-.myjumbotron{
-    background-color: rgb(49, 129, 24);
-}
-.mynav{
+
+.mynav {
     background-color: rgb(0, 0, 0);
+}
+
+.myjumbotron {
+    background-color: rgb(49, 129, 24);
+    color: white;
+}
+
+.carousel-inner img {
+    width: 60%;
+    height: 100%;
+}
+
+.btn-login {
+    background-color: rgb(49, 129, 24);
+    color: white;
+}
+
+.btn-login:hover {
+    background-color: rgb(38, 104, 18);
+    color: white;
+}
+
+.btn-insc {
+    background-color: rgb(93, 172, 70);
+    color: white;
+}
+
+.btn-insc:hover {
+    background-color: rgb(113, 206, 85);
+    color: white;
 }
