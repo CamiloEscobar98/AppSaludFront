@@ -1,0 +1,9 @@
+.content-body{
+    height: calc(100vh);
+}
+.myjumbotron{
+    background-color: rgb(49, 129, 24);
+}
+.mynav{
+    background-color: rgb(0, 0, 0);
+}
