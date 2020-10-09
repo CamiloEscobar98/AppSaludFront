@@ -22,7 +22,7 @@
     <!-- Navegador -->
     <nav class="navbar navbar-expand-md mynav navbar-dark">
         <!-- Brand -->
-        <a class="navbar-brand" href="home.html">Inicio</a>
+        <a class="navbar-brand" href="../usuario/home.html">Inicio</a>
 
         <!-- Toggler/collapsibe Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -33,13 +33,13 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="perfil.html">Perfil</a>
+                    <a class="nav-link" href="../usuario/perfil.html">Perfil</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../administrador/home.html">Administrador</a>
+                    <a class="nav-link" href="home.html">Administrador</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="perfil.html">Capacitador</a>
+                    <a class="nav-link" href="../capacitador/home.html">Capacitador</a>
                 </li>
             </ul>
             <ul class="navbar-nav">
@@ -53,6 +53,58 @@
         <div class="row">
             <div class="col-12 text-center myjumbotron">
                 <h1>Todas las temáticas</h1>
+            </div>
+            <div class="col-12 mt-2">
+                <button type="button" class="btn btn-insc float-right" data-toggle="modal" data-target="#myModal">
+                    Agregar temática
+                </button>
+                <div class="modal" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header myjumbotron">
+                                <h4 class="modal-title text-center">Registrar Temática</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label>Titulo de la temática:</label>
+                                        <input type="text" name="titulo" class="form-control"
+                                            placeholder="Ingrese el titulo de la temática" aria-describedby="helpId">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Descripción de la temática</label>
+                                        <textarea class="form-control" name="descripcion" rows="4"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Agregar capacitador</label>
+                                        <select class="form-control" name="" id="">
+                                            <option>Angélica María Monsalve</option>
+                                            <option>John Cina</option>
+                                            <option>Martha Kent</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Portada de la temática</label>
+                                        <input type="file" class="form-control-file" name="" id=""
+                                            placeholder="Selecciona foto para la portada de la temática"
+                                            aria-describedby="fileHelpId">
+                                    </div>
+                                </form>
+                            </div>
+
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="col-12 col-sm-12 col-md-3 my-2">
@@ -72,7 +124,10 @@
                         </p>
                     </div>
                     <div class="card-footer text-muted myjumbotron">
-                        <a href="tematica.html" class="btn btn-insc btn-block">Visualizar</a>
+                        <div class="btn-group w-100" role="group" aria-label="">
+                            <button type="button" class="btn btn-insc w-50">Visualizar</button>
+                            <button type="button" class="btn btn-danger w-50">Eliminar</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -93,7 +148,10 @@
                         </p>
                     </div>
                     <div class="card-footer text-muted myjumbotron">
-                        <button type="button" class="btn btn-insc btn-block" disabled>Visualizar</button>
+                        <div class="btn-group w-100" role="group" aria-label="">
+                            <button type="button" class="btn btn-insc w-50">Visualizar</button>
+                            <button type="button" class="btn btn-danger w-50">Eliminar</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -114,7 +172,10 @@
                         </p>
                     </div>
                     <div class="card-footer text-muted myjumbotron">
-                        <button type="button" class="btn btn-insc btn-block" disabled>Visualizar</button>
+                        <div class="btn-group w-100" role="group" aria-label="">
+                            <button type="button" class="btn btn-insc w-50">Visualizar</button>
+                            <button type="button" class="btn btn-danger w-50">Eliminar</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -126,12 +187,15 @@
                     <div class="card-body">
                         <img class="img-fluid" src="../../images/tematicas/ejemplo-1.png" alt="Chania">
                         <p class="my-2 text-justify">
-                            Para poder realizar el proceso de evaluación, necesitas completar todas las temáticas. Aún
-                            no has completado todas las temáticas, por favor continúa con la inducción.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident magnam dolor consequuntur
+                            eaque, aperiam molestias illum veritatis ea est quae! Nisi provident odio sint fugit sunt
+                            similique impedit doloremque accusantium! Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Explicabo commodi praesentium, fugiat dolor harum eius accusantium a totam, corporis
+                            sint sequi modi velit, dolores nulla? Voluptates impedit explicabo magnam vel!
                         </p>
                     </div>
                     <div class="card-footer text-muted myjumbotron">
-                        <button type="button" class="btn btn-insc btn-block" disabled>No puedes realizar la evaluación
+                        <button type="button" class="btn btn-insc btn-block">Visualizar evaluación
                         </button>
                     </div>
                 </div>
