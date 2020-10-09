@@ -1,5 +1,5 @@
 .content-body {
-    /* height: calc(100vh); */
+    height: calc(100vh);
 }
 
 .mynav {
@@ -32,6 +32,19 @@
 }
 
 .btn-insc:hover {
+    background-color: rgb(113, 206, 85);
+    color: white;
+}
+
+.list-group-item.active {
+    background-color: rgb(49, 129, 24);
+}
+
+.list-group-item {
+    color: black;
+}
+
+.list-group-item:hover {
     background-color: rgb(113, 206, 85);
     color: white;
 }
